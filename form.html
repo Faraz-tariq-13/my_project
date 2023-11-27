@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Form </title>
+    <style>
+        form {
+            max-width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid  rgb(196, 148, 148);
+            border-radius: 10px;
+            color: rgb(232, 135, 9);
+            background-image: url(https://img.freepik.com/premium-vector/wave-abstract-line-background-mordern-waves_125452-2233.jpg?w=826);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: chocolate;
+        }
+
+        input[type="text"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid rgb(124, 124, 10);
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(232, 136, 18);
+            color: rgb(94, 126, 155);
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: rgb(41, 23, 2);
+        }
+    </style>
+</head>
+
+<body>
+    <form id="Travelform">
+        <h1>TRAVEL FORM</h1>
+        <label>Enter Your Name</label>
+        <input type="text" id="name">
+
+        <br>
+
+        <label>
+            <input type="radio" value="section a" name="section"> Section A
+        </label>
+
+        <br>
+
+        <label>
+            <input type="radio" value="section b" name="section"> Section B
+        </label>
+
+        <br>
+
+        <input type="checkbox" id="fatima" required>
+        <label>Want food canteen card</label>
+
+        <br>
+
+        <label for="explain">Why do you want to join?</label>
+        <textarea id="explain" cols="30" row="10" placeholder="Explain here"> </textarea>
+    </form>
+    
+</body>
+</html>
